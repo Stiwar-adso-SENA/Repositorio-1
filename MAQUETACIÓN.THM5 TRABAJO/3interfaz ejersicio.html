@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empleados - Basi Recursos Humanos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-size: 1rem;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="tel"] {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Logo de la tienda en la parte superior -->
+    <div class="logo">
+        <img src="https://assets.onecompiler.app/42tpcukdf/42tpctb9g/logoBasi.jpeg" alt="Logo de Basi">
+    </div>
+
+    <!-- Título de la página -->
+    <h2>Registro de Empleados</h2>
+
+    <!-- Formulario para registrar empleados -->
+    <form action="#" method="POST">
+        <!-- Campo para ingresar el nombre -->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa el nombre del empleado">
+
+        <!-- Campo para ingresar el apellido -->
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required placeholder="Ingresa el apellido del empleado">
+
+        <!-- Campo para ingresar el teléfono -->
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ingresa el teléfono del empleado">
+
+        <!-- Campo para ingresar la dirección -->
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" required placeholder="Ingresa la dirección del empleado">
+
+        <!-- Campo para ingresar el cargo -->
+        <label for="cargo">Cargo</label>
+        <input type="text" id="cargo" name="cargo" required placeholder="Ingresa el cargo del empleado">
+
+        <!-- Botón para registrar -->
+        <button type="submit">Registrar</button>
+    </form>
+</div>
+
+</body>
+</html>
+
